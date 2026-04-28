@@ -1,0 +1,28 @@
+.container {
+    background-color: slategrey;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.resumo-pesquisa {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
