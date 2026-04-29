@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -26,24 +27,20 @@
     </nav>
 
     <section>
-
-        <div class="container-resumo">
-            <h2 class="form-title">Resumo</h2>
-            <div class="card"></div>
-        </div>
-
         <div class="container-adicionar">
             <h2 class="form-title">Adicionar Produto</h2>
             <br>
             <div class="adicionar-produto">
                 <input class="form-input" name="productName" type="text" placeholder="Nome do Produto"
                     id="productNameInput">
-                <input class="form-input" name="productQuantidy" type="number" placeholder="Quantidade"
+                <input class="form-input" name="productQuantity" type="number" placeholder="Quantidade"
                     id="productQuantityInput">
                 <input class="form-input" name="productDate" type="date" placeholder="Data de Validade"
                     id="productDateInput">
                 <button class="form-button" id="addProductButton">Adicionar</button>
             </div>
+
+            <p id="errorMessage" style="color: red;"></p>
         </div>
 
         <div class="container-produtos">
@@ -58,8 +55,7 @@
                             <th class="produto-status">Status</th>
                         </tr>
                     </thead>
-                    <tbody>
-
+                    <tbody id="tbody">
                     </tbody>
                 </table>
             </div>

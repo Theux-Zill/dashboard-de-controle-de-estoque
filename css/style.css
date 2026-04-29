@@ -1,12 +1,16 @@
-.container-adicionar, .container-produtos, .container-resumo {
+.container-adicionar,
+.container-produtos {
     background-color: rgb(142, 159, 175);
     padding: 20px;
     border-radius: 10px;
     margin: 20px;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    gap: 10px;
+}
+.container-produtos{
+    gap: 12px;
+    padding: 30px;
 }
 
 .card {
@@ -17,8 +21,16 @@
     max-width: 800px;
     display: block;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-
 }
+
+.resumo-pesquisa {
+    width: 100%;
+}
+
+.resumo-pesquisa td {
+    text-align: center;
+}
+
 
 .resumo-pesquisa tr {
     border-bottom: 1px solid #ddd;
@@ -32,16 +44,17 @@
     border-collapse: collapse;
 }
 
-.resumo-pesquisa th, .resumo-pesquisa td{
+.resumo-pesquisa th,
+.resumo-pesquisa td {
     padding: 12px;
-    text-align: center;
 }
 
 .resumo-pesquisa thead {
     background-color: #f0f0f0;
 }
 
-#addProductButton, #searchButton {
+#addProductButton,
+#searchButton {
     transition: 0.3s;
 }
 
@@ -66,13 +79,14 @@
 
 /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
 
-body{
+body {
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4; 
+    background-color: #f4f4f4;
 }
-header{
+
+header {
     background-color: #2c3e50;
     color: #ffffff;
     padding: 20px;
@@ -85,6 +99,7 @@ header{
     align-items: center;
     margin: 16px;
 }
+
 .form-input {
     width: 100%;
     max-width: 400px;
@@ -93,6 +108,7 @@ header{
     border-radius: 8px;
     margin: 8px 0;
 }
+
 #searchButton {
     padding: 10px 20px;
     background-color: #423e06;
@@ -102,17 +118,18 @@ header{
     cursor: pointer;
 }
 
-.form-search-title { 
+.form-search-title {
     font-weight: bold;
     font-size: 20px;
 }
 
-#searchButton:hover, #addProductButton:hover{
+#searchButton:hover,
+#addProductButton:hover {
     background-color: #d41616;
     color: white;
 }
 
-#addProductButton{
+#addProductButton {
     padding: 10px 20px;
     background-color: rgb(202, 185, 32);
     color: rgb(255, 255, 255);
@@ -120,17 +137,47 @@ header{
     border-radius: 8px;
     cursor: pointer;
 }
-.form-title{
+
+.form-title {
     text-align: center;
     color: #fffeee;
     margin-top: 20px;
 }
 
-footer{
+footer {
     background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 10px;
     position: relative;
     bottom: 0;
+}
+
+.Vencido {
+    background-color: #ffcccc;
+}
+
+.Proximo {
+    background-color: #fff3cd;
+}
+
+.Ok {
+    background-color: #d4edda;
+}
+
+button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button i {
+    color: #e74c3c;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+button i:hover {
+    color: #c0392b;
+    transform: scale(1.2);
 }
