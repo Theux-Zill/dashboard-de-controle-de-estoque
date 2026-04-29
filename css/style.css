@@ -149,7 +149,7 @@ footer {
     color: #ffffff;
     text-align: center;
     padding: 10px;
-    position: relative;
+    position-bottom: relative;
     bottom: 0;
 }
 
