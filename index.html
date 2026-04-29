@@ -30,15 +30,15 @@
         <div class="container-adicionar">
             <h2 class="form-title">Adicionar Produto</h2>
             <br>
-            <div class="adicionar-produto">
+            <form class="adicionar-produto" id="addProductForm">
                 <input class="form-input" name="productName" type="text" placeholder="Nome do Produto"
-                    id="productNameInput">
+                    id="productNameInput" required>
                 <input class="form-input" name="productQuantity" type="number" placeholder="Quantidade"
-                    id="productQuantityInput">
+                    id="productQuantityInput" required min="1">
                 <input class="form-input" name="productDate" type="date" placeholder="Data de Validade"
-                    id="productDateInput">
-                <button class="form-button" id="addProductButton">Adicionar</button>
-            </div>
+                    id="productDateInput" required>
+                <button type="button" class="form-button" id="addProductButton">Adicionar</button>
+            </form>
 
             <p id="errorMessage" style="color: red;"></p>
         </div>

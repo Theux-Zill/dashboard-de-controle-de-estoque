@@ -14,12 +14,12 @@ function renderProducts(list = products) {
         const status = getStatus(product.date);
         const row = `
             <tr>
-                <td>${product.name}</td>
-                <td>${product.quantity}</td>
-                <td>${product.date}</td>
-                <td class="${status}">${status}</td>
-                <td>
-                    <button onclick="removeProduct(${index})">
+                <td data-label="Produto">${product.name}</td>
+                <td data-label="Quantidade">${product.quantity}</td>
+                <td data-label="Data">${product.date}</td>
+                <td class="${status}" data-label="Status">${status}</td>
+                <td data-label="Ações">
+                    <button onclick="removeProduct(${index})" title="Remover produto">
                         <i class="fa-solid fa-trash"></i>
                     </button>
                 </td>

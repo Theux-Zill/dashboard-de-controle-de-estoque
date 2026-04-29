@@ -1,0 +1,379 @@
+/* ========================================
+   RESPONSIVIDADE - MOBILE FIRST
+   ======================================== */
+
+/* ========================================
+   MOBILE (até 480px)
+   ======================================== */
+@media (max-width: 480px) {
+    /* Header */
+    header {
+        padding: 15px 10px;
+    }
+
+    header h1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    /* Navegação e Busca */
+    .buscar-produto {
+        padding: 10px 0;
+    }
+
+    .form-search {
+        margin: 10px 5px;
+    }
+
+    .form-input {
+        max-width: 100%;
+        padding: 8px;
+        font-size: 16px;
+        margin: 5px 0;
+    }
+
+    /* Containers */
+    .container-adicionar,
+    .container-produtos {
+        margin: 10px 5px;
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .container-produtos {
+        padding: 15px;
+    }
+
+    /* Título do Formulário */
+    .form-title {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    /* Formulário de Adicionar Produto */
+    .adicionar-produto {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 8px;
+    }
+
+    .adicionar-produto .form-input {
+        width: 100%;
+    }
+
+    /* Botão */
+    .form-button,
+    #addProductButton,
+    #searchButton {
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    /* Card da Tabela */
+    .card {
+        max-width: 100%;
+        padding: 10px;
+        border-radius: 8px;
+    }
+
+    /* Tabela */
+    .resumo-pesquisa {
+        font-size: 12px;
+    }
+
+    .resumo-pesquisa th,
+    .resumo-pesquisa td {
+        padding: 8px 4px;
+    }
+
+    .resumo-pesquisa th {
+        font-size: 11px;
+    }
+
+    /* Responsividade da tabela em mobile */
+    .resumo-pesquisa tbody tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .resumo-pesquisa tbody tr:hover {
+        background-color: #ffffff;
+    }
+
+    .resumo-pesquisa tbody td {
+        display: block;
+        text-align: left;
+        padding: 10px;
+        border: none;
+    }
+
+    .resumo-pesquisa tbody td::before {
+        content: attr(data-label);
+        font-weight: bold;
+        margin-right: 10px;
+        color: #2c3e50;
+    }
+
+    .resumo-pesquisa thead {
+        display: none;
+    }
+
+    /* Ícones de ação */
+    button i {
+        font-size: 16px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px 5px;
+        font-size: 12px;
+    }
+
+    /* Mensagem de erro */
+    #errorMessage {
+        font-size: 12px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+/* ========================================
+   TABLET (481px até 768px)
+   ======================================== */
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Header */
+    header {
+        padding: 18px 15px;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    /* Navegação e Busca */
+    .buscar-produto {
+        padding: 12px 0;
+    }
+
+    .form-search {
+        margin: 12px;
+    }
+
+    .form-input {
+        max-width: 100%;
+        padding: 10px;
+        margin: 6px 0;
+    }
+
+    /* Containers */
+    .container-adicionar,
+    .container-produtos {
+        margin: 15px 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+
+    /* Formulário de Adicionar Produto */
+    .adicionar-produto {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .adicionar-produto .form-button {
+        grid-column: 1 / -1;
+        width: 100%;
+    }
+
+    /* Card da Tabela */
+    .card {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    /* Tabela */
+    .resumo-pesquisa {
+        font-size: 13px;
+    }
+
+    .resumo-pesquisa th,
+    .resumo-pesquisa td {
+        padding: 10px;
+    }
+
+    .resumo-pesquisa thead {
+        display: table-header-group;
+    }
+
+    .resumo-pesquisa tbody tr {
+        display: table-row;
+    }
+
+    .resumo-pesquisa tbody td {
+        display: table-cell;
+        border: none;
+        text-align: center;
+    }
+
+    .resumo-pesquisa tbody td::before {
+        content: none;
+    }
+
+    /* Footer */
+    footer {
+        padding: 10px;
+        font-size: 13px;
+    }
+}
+
+/* ========================================
+   DESKTOP (acima de 769px)
+   ======================================== */
+@media (min-width: 769px) {
+    /* Header */
+    header {
+        padding: 25px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    /* Navegação e Busca */
+    .form-search {
+        margin: 20px;
+    }
+
+    .form-input {
+        max-width: 400px;
+        padding: 12px;
+    }
+
+    /* Containers */
+    .container-adicionar,
+    .container-produtos {
+        margin: 20px auto;
+        padding: 20px 30px;
+        max-width: 900px;
+    }
+
+    /* Formulário de Adicionar Produto */
+    .adicionar-produto {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) auto;
+        gap: 15px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .adicionar-produto .form-input {
+        width: 100%;
+    }
+
+    .adicionar-produto .form-button {
+        align-self: flex-end;
+        width: auto;
+        min-width: 120px;
+    }
+
+    /* Card da Tabela */
+    .card {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    /* Tabela */
+    .resumo-pesquisa {
+        font-size: 14px;
+    }
+
+    .resumo-pesquisa th,
+    .resumo-pesquisa td {
+        padding: 15px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+        font-size: 14px;
+    }
+}
+
+/* ========================================
+   ANIMAÇÕES E TRANSIÇÕES
+   ======================================== */
+@media (prefers-reduced-motion: no-preference) {
+    .form-input,
+    .form-button,
+    button {
+        transition: all 0.3s ease;
+    }
+
+    button i {
+        transition: color 0.2s ease, transform 0.2s ease;
+    }
+}
+
+/* ========================================
+   MODO ESCURO (Opcional)
+   ======================================== */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #1a1a1a;
+    }
+
+    .card {
+        background-color: #2d2d2d;
+        color: #ffffff;
+    }
+
+    .resumo-pesquisa thead {
+        background-color: #3d3d3d;
+    }
+
+    .form-input {
+        background-color: #3d3d3d;
+        color: #ffffff;
+        border-color: #555;
+    }
+
+    .resumo-pesquisa tbody tr:hover {
+        background-color: #3d3d3d;
+    }
+}
+
+/* ========================================
+   IMPRESSÃO (PRINT)
+   ======================================== */
+@media print {
+    header,
+    .buscar-produto,
+    .container-adicionar,
+    .form-button,
+    #addProductButton,
+    footer {
+        display: none;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    .card {
+        box-shadow: none;
+        border: 1px solid #ddd;
+    }
+
+    .container-produtos {
+        margin: 0;
+        padding: 0;
+        background-color: transparent;
+    }
+}
