@@ -1,28 +1,136 @@
-.container {
-    background-color: slategrey;
+.container-adicionar, .container-produtos, .container-resumo {
+    background-color: rgb(142, 159, 175);
     padding: 20px;
     border-radius: 10px;
-    margin: 20px 20px;
+    margin: 20px;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column; 
     align-items: center;
+    gap: 10px;
 }
 
 .card {
     background-color: #ffffff;
-    padding: 20px;
+    padding: 16px;
     border-radius: 10px;
-    width: 900px;
-    display: flex;
-    justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    display: block;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 
 }
 
+.resumo-pesquisa tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.resumo-pesquisa tbody tr:hover {
+    background-color: #f9f9f9;
+}
+
 .resumo-pesquisa {
-    list-style-type: none;
+    border-collapse: collapse;
+}
+
+.resumo-pesquisa th, .resumo-pesquisa td{
+    padding: 12px;
+    text-align: center;
+}
+
+.resumo-pesquisa thead {
+    background-color: #f0f0f0;
+}
+
+#addProductButton, #searchButton {
+    transition: 0.3s;
+}
+
+/* AS CORES ERAM PRA SABER O ESPACAMENTO DAS CLASS
+.produtos-cadastrados {
+    background-color: rgb(102, 102, 238);
+}
+
+.quantidade-cadastrado {
+    background-color: rgb(255, 255, 0);
+}
+
+.validade-cadastrado {
+    background-color: rgb(255, 0, 255);
+}
+
+.produto-status {
+    background-color: rgb(44, 236, 172);
+} */
+
+/* onde sera o global */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap'); */
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
     padding: 0;
+    background-color: #f4f4f4; 
+}
+header{
+    background-color: #2c3e50;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-search {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+    margin: 16px;
+}
+.form-input {
     width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: 8px 0;
+}
+#searchButton {
+    padding: 10px 20px;
+    background-color: #423e06;
+    color: #ffee00;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.form-search-title { 
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#searchButton:hover, #addProductButton:hover{
+    background-color: #d41616;
+    color: white;
+}
+
+#addProductButton{
+    padding: 10px 20px;
+    background-color: rgb(202, 185, 32);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.form-title{
+    text-align: center;
+    color: #fffeee;
+    margin-top: 20px;
+}
+
+footer{
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
 }
