@@ -1,61 +1,129 @@
-# Dashboard de Controle de Estoque e Validade
+# 📦 Dashboard de Controle de Estoque
 
-Este projeto é um dashboard simples para controle de estoque e monitoramento de datas de validade de produtos. Ele permite adicionar, visualizar, pesquisar e remover produtos, além de indicar o status de validade de cada item.
+Um dashboard web moderno e responsivo para gerenciamento de estoque e monitoramento de datas de validade de produtos. Desenvolvido com HTML5, CSS3 e JavaScript vanilla, oferecendo uma solução simples, rápida e sem dependências externas.
 
-## Funcionalidades
+## ✨ Funcionalidades
 
--   **Adicionar Produtos**: Registre novos produtos com nome, quantidade e data de validade.
--   **Visualizar Produtos**: Exibe uma lista de todos os produtos cadastrados em uma tabela.
--   **Pesquisar Produtos**: Filtra a lista de produtos em tempo real com base no nome do produto.
--   **Remover Produtos**: Exclui produtos individualmente da lista.
--   **Status de Validade**: Classifica os produtos em três categorias visuais:
-    -   `Vencido`: Produtos cuja data de validade já passou.
-    -   `Próximo`: Produtos que vencem em até 3 dias.
-    -   `Ok`: Produtos com validade superior a 3 dias.
--   **Persistência de Dados**: Todos os dados dos produtos são salvos no `localStorage` do navegador, garantindo que as informações não sejam perdidas ao fechar a página.
+- ✅ **Adicionar Produtos** - Registre produtos com nome, quantidade e data de validade
+- 🔍 **Busca em Tempo Real** - Filtre produtos instantaneamente pelo nome
+- 📊 **Status de Validade** - Classificação automática (Vencido, Próximo, Ok)
+- 🗑️ **Gerenciamento** - Remova produtos individualmente com confirmação
+- 💾 **Persistência Local** - Dados salvos no localStorage do navegador
+- 📱 **Design Responsivo** - Funciona perfeitamente em desktop, tablet e mobile
+- 🎨 **Modo Escuro** - Suporte automático a preferências do sistema
+- ♿ **Acessibilidade** - Respeita preferências de redução de movimento
 
-## Tecnologias Utilizadas
+## 🛠️ Tecnologias
 
--   **HTML5**: Estrutura da página.
--   **CSS3**: Estilização e layout responsivo.
--   **JavaScript (ES6+)**: Lógica de manipulação de dados, interatividade e persistência.
--   **Font Awesome**: Ícones para ações (ex: remover).
+| Tecnologia | Descrição |
+|-----------|-----------|
+| HTML5 | Estrutura semântica |
+| CSS3 | Grid, Flexbox, Media Queries, Custom Properties |
+| JavaScript (ES6+) | Lógica modular e funcional |
+| Font Awesome | Ícones vetoriais |
+| Firebase | (Opcional) Para sincronização em nuvem |
 
-## Como Usar
+## 📋 Status de Validade
 
-### Adicionar um Produto
-1.  Preencha os campos "Nome do Produto", "Quantidade" e "Data de Validade" na seção "Adicionar Produto".
-2.  Clique no botão "Adicionar".
+O sistema classifica produtos em três categorias com feedback visual:
 
-### Pesquisar Produtos
-1.  Utilize a barra de pesquisa no topo da página ("Nome do produto ou Código...").
-2.  Conforme você digita, a tabela de produtos será filtrada automaticamente.
+| Status | Condição | Cor |
+|--------|----------|-----|
+| 🟢 **Ok** | Validade > 7 dias | Verde |
+| 🟡 **Próximo** | 3-7 dias para vencer | Amarelo |
+| 🔴 **Vencido** | Data de validade expirada | Vermelho |
 
-### Remover um Produto
-1.  Na tabela "Produtos Cadastrados", localize o produto que deseja remover.
-2.  Clique no ícone de lixeira (🗑️) na coluna de ações.
-3.  Confirme a remoção na caixa de diálogo.
+## 🚀 Começar Rápido
 
-### Entender o Status de Validade
-A coluna "Status" na tabela indicará a situação da validade do produto com cores distintas:
--   **Vermelho claro**: Produto `Vencido`.
--   **Amarelo claro**: Produto `Próximo` do vencimento.
--   **Verde claro**: Produto `Ok`.
+### Sem Instalação
+1. Clone ou baixe o repositório
+2. Abra `index.html` diretamente no navegador
+3. Comece a usar!
 
-## Instalação e Execução
+### Com npm (Opcional - Futuro suporte a Firebase)
+```bash
+# Clone o repositório
+git clone https://github.com/seu-usuario/dashboard-de-controle-de-estoque.git
+cd dashboard-de-controle-de-estoque
 
-Este é um projeto front-end puro e não requer um servidor para ser executado.
+# Instale dependências (opcional)
+npm install firebase
 
-1.  **Clone o repositório** (ou baixe os arquivos):
-    ```bash
-    git clone https://github.com/seu-usuario/dashboard-de-controle-de-estoque.git
-    ```
-2.  **Navegue até o diretório do projeto**:
-    ```bash
-    cd dashboard-de-controle-de-estoque
-    ```
-3.  **Abra o arquivo `html/index.html`** em seu navegador web preferido.
+# Abra em seu navegador
+open index.html
+```
 
-## Licença
+## 📖 Como Usar
 
-Este projeto está licenciado sob a licença MIT.
+### ➕ Adicionar Produto
+1. Preencha os campos na seção "Adicionar Produto"
+2. Nome, Quantidade e Data de Validade são obrigatórios
+3. Clique em "Adicionar"
+
+### 🔎 Pesquisar Produto
+- Digite o nome do produto na barra de pesquisa
+- A tabela é filtrada automaticamente enquanto você digita
+- Deixe em branco para ver todos os produtos
+
+### 🗑️ Remover Produto
+1. Localize o produto na tabela "Produtos Cadastrados"
+2. Clique no ícone de lixeira (🗑️)
+3. Confirme a remoção na caixa de diálogo
+
+## 🗂️ Estrutura do Projeto
+
+```
+dashboard-de-controle-de-estoque/
+├── index.html           # Estrutura HTML
+├── README.md           # Este arquivo
+├── css/
+│   ├── reset.css       # Normalização de estilos
+│   ├── grid.css        # Sistema de grid
+│   ├── global.css      # Variáveis globais
+│   ├── responsive.css  # Media queries
+│   └── style.css       # Estilos principais
+└── js/
+    ├── api.js          # Integrações externas
+    └── script.js       # Lógica da aplicação
+```
+
+## 🔧 Características Técnicas
+
+### JavaScript Modular
+- Funções puras e sem efeitos colaterais
+- Separação clara de responsabilidades
+- Tratamento robusto de erros
+- Proteção contra XSS
+
+### Performance
+- Renderização eficiente com DocumentFragment
+- Sem frameworks pesados
+- Carregamento instantâneo
+
+### Armazenamento
+- localStorage para persistência local
+- Suporte futuro para sincronização com Firebase
+
+## 📱 Navegadores Suportados
+
+- Chrome/Edge 90+
+- Firefox 88+
+- Safari 14+
+- Opera 76+
+
+## 🎯 Próximas Melhorias
+
+- [ ] Integração com Firebase para sincronização em nuvem
+- [ ] Autenticação de usuários
+- [ ] Importação/Exportação de dados (CSV, JSON)
+- [ ] Gráficos de análise de estoque
+- [ ] Notificações de vencimento
+- [ ] Relatórios em PDF
+
+## 📄 Licença
+
+MIT License - veja o arquivo [LICENSE](LICENSE) para detalhes.
+
+## 👤 Autor
+
+Desenvolvido com ❤️ para gerenciamento eficiente de estoque.

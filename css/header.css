@@ -1,0 +1,28 @@
+/* ========================================
+   HEADER E NAVEGAÇÃO
+   ======================================== */
+header {
+    background-color: var(--color-primary);
+    color: var(--color-text-light);
+    padding: var(--spacing-3xl);
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+
+header h1 {
+    margin: 0;
+    font-size: var(--font-size-header);
+    font-weight: 700;
+}
+
+/* Barra de Pesquisa */
+.buscar-produto {
+    padding: var(--spacing-lg) 0;
+}
+
+.form-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: var(--spacing-2xl);
+}
