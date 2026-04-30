@@ -17,8 +17,8 @@
     /* Cores Neutras */
     --color-bg-light: #f4f4f4;
     --color-bg-white: #ffffff;
-    --color-bg-dark: #000000;
-    --color-text-dark: #000000;
+    --color-bg-dark: #ffffff;
+    --color-text-dark: #fff8f8;
     --color-text-light: #ffffff;
     --color-border: #cccccc;
     --color-border-light: #ddd;
@@ -69,7 +69,7 @@ body {
     font-size: var(--font-size-base);
     margin: 0;
     padding: 0;
-    background-color: var(--color-bg-light);
+    background-color: aliceblue;
     color: var(--color-text-dark);
     line-height: 1.6;
 }
@@ -263,7 +263,7 @@ button i:hover {
 
 .resumo-pesquisa thead th {
     font-weight: 600;
-    color: var(--color-primary);
+    color: #000;
 }
 
 .resumo-pesquisa tbody tr {
@@ -335,9 +335,9 @@ footer p {
 @media (prefers-color-scheme: dark) {
     :root {
         --color-bg-light: #1a1a1a;
-        --color-bg-white: #2d2d2d;
-        --color-text-dark: #ffffff;
-        --color-header-bg: #3d3d3d;
+        --color-bg-white: #f2f2f2;
+        --color-text-dark: black;
+        --color-header-bg: #bbbbbb;
         --color-border: #555;
         --color-border-light: #444;
     }
@@ -346,8 +346,8 @@ footer p {
     input[type="text"],
     input[type="number"],
     input[type="date"] {
-        background-color: #3d3d3d;
-        color: var(--color-text-light);
+        background-color: #ffffff;
+        color: #000000;
         border-color: var(--color-border);
     }
 
@@ -356,7 +356,7 @@ footer p {
     }
 
     .resumo-pesquisa tbody tr:hover {
-        background-color: #3d3d3d;
+        background-color: #bbbbbb;
     }
 }
 

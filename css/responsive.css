@@ -278,7 +278,7 @@
     }
 
     .adicionar-produto .form-button {
-        align-self: flex-end;
+        align-self: center;
         width: auto;
         min-width: 120px;
     }
@@ -318,34 +318,6 @@
 
     button i {
         transition: color 0.2s ease, transform 0.2s ease;
-    }
-}
-
-/* ========================================
-   MODO ESCURO (Opcional)
-   ======================================== */
-@media (prefers-color-scheme: dark) {
-    body {
-        background-color: #1a1a1a;
-    }
-
-    .card {
-        background-color: #2d2d2d;
-        color: #ffffff;
-    }
-
-    .resumo-pesquisa thead {
-        background-color: #3d3d3d;
-    }
-
-    .form-input {
-        background-color: #3d3d3d;
-        color: #ffffff;
-        border-color: #555;
-    }
-
-    .resumo-pesquisa tbody tr:hover {
-        background-color: #3d3d3d;
     }
 }
 
